@@ -1,4 +1,4 @@
-from datetime import date, datetime
+from datetime import date
 
 class HouseInfo:
 	def __init__(self, data):
@@ -15,7 +15,7 @@ class HouseInfo:
 
 		return field_data
 
-	def get_data_by_date(self, field, rec_date = datetime.now()):
+	def get_data_by_date(self, field, rec_date = date.today()):
 		field_data = []
 
 		for record in self.data:
