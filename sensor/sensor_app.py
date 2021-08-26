@@ -1,5 +1,5 @@
 # Runner script for all modules
-
+import load_data
 
 ##############################
 # Do not remove these two lines
@@ -7,7 +7,8 @@
 data = []
 print("Sensor Data App")
 ##############################
-
+data = load_data.load_sensor_data()
+print("Loaded records: {}".format(len(data)))
 # Module 1 code here:
 
 # Module 2 code here:
