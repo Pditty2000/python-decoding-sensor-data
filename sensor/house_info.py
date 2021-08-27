@@ -1,6 +1,6 @@
-from datetime import date, datetime
+from datetime import date
 
-class HouseInfo:
+class HouseInfo(object):
 	def __init__(self, data):
 		self.data = data
 
@@ -22,3 +22,4 @@ class HouseInfo:
 			if rec_date.strftime("%m/%d/%y") == record['date']:
 				field_data.append(record[field])
 		return field_data
+
